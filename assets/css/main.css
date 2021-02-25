@@ -73,6 +73,9 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+
+
 /* Basic */
 
 	html {
@@ -2465,8 +2468,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #f691ad;
+			color: #f691ad !important;
 		}
 
 		input[type="submit"]:active,
