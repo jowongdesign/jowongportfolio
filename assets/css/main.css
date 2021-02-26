@@ -102,7 +102,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #39393a;
 		font-family: 'Josefin Sans', sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -1899,7 +1899,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #39393a;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
