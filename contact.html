@@ -5,37 +5,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	
-
-
 	<head>
 		<title>Contact Jo Wong</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+	
+		<script src="assets/js/jquery.min.js"></script>		    
+		<script>$(function () {
+				var includes = $('[data-include]')
+				$.each(includes, function () {
+					var file = 'views/' + $(this).data('include') + '.html'
+					$(this).load(file)
+				})
+			})
+		</script>
 	</head>
 	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="https://jowongdesign.co.uk/" class="image avatar"><img src="images/myavatar.jpg" alt="" /></a>
-					<h1><strong>Jo Wong</strong><br></h1>
-					<h3>Creative Practitioner. <br/>
-					Freelance Graphic Designer. <br />
-					Nottingham, United Kingdom.</h3>
-					<h5> <a href="index.html">portfolio</a> | <a href="/about.html">about</a> | <a href="/contact.html">contact</a></h5>
-				</div>
-			</header>
-
+		<div data-include="header"></div>
 		<!-- Main -->
 			<div id="main">
-				
 				<section>
 					<h2>Contact</h2>
 					<div class="row">
 						<div class="col-6 col-12-xsmall">
-							<h5>General</h5>
 							<ul class="labeled-icons">
 								
 								<li>
@@ -49,11 +42,6 @@
 								</li>
 
 								<li>
-									<h3 class="icon brands fa-facebook-f"><span class="label">Facebook</span></h3>
-									<a href="https://www.facebook.com/jo.wong.design/">Jo Wong Design</a>
-								</li>
-
-								<li>
 									<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
 									jo.wong.design@outlook.com
 								</li>
@@ -61,56 +49,9 @@
 
 						</div>
 						<div class="col-6 col-12-xsmall">
-							<h5>Services and Shop</h5>
-							<ul class="labeled-icons">
-
-								<li>
-									<h3 class="icon solid fa-paint-brush"><span class="label">Fiverr</span></h3>
-									<a href="https://www.fiverr.com/jowongdesign">Fiverr</a>
-								</li>
-
-								<li>
-									<h3 class="icon fa-shopping-bag"><span class="label">RedBubble</span></h3>
-									<a href="https://www.redbubble.com/people/jowongdesign/shop/">RedBubble</a>
-								</li>
-
-								<li>
-									<h3 class="icon brands fa-etsy"><span class="label">Etsy</span></h3>
-									<a href="404.html">Etsy</a>
-								</li>
-							</ul>
-
 					</div>
-
-
 				</section>
-
-
-
 			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="http://instagram.com/jo.wong.design/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="http://linkedin.com/in/jo-wong-7077a088/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.facebook.com/jo.wong.design" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="mailto:jo.wong.design@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Jo Wong Design 2021</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			<div data-include="footer"></div>
 	</body>
 </html>
