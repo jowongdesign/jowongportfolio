@@ -12,15 +12,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 
-	<script src="assets/js/jquery.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var includes = document.querySelectorAll('[data-include]');
 
-	<script>$(function () {
-			var includes = $('[data-include]')
-			$.each(includes, function () {
-				var file = 'views/' + $(this).data('include') + '.html'
-				$(this).load(file)
-			})
-		})</script>
+			includes.forEach(function (element) {
+				var file = 'views/' + element.getAttribute('data-include') + '.html';
+
+				fetch(file)
+					.then(function (response) {
+						if (!response.ok) {
+							throw new Error('Network response was not ok');
+						}
+						return response.text();
+					})
+					.then(function (data) {
+						element.innerHTML = data;
+					})
+					.catch(function (error) {
+						console.error('Error fetching the include file:', error);
+					});
+			});
+		});
+	</script>
 </head>
 
 <body class="is-preload">
@@ -54,6 +68,7 @@
 			</div>
 		</section>
 	</div>
+
 	<!-- Footer -->
 	<div data-include="footer"></div>
 </body>
