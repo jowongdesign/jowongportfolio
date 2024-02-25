@@ -2063,6 +2063,15 @@ input, select, textarea {
 
 /* Image */
 
+	.zoom {
+		display:inline-block;
+		position: relative;
+	}
+
+	.zoomImg{ 
+		background-color:#fff; 
+	}
+
 	.image {
 		border-radius: 0.2em;
 		border: 0;
@@ -2091,15 +2100,15 @@ input, select, textarea {
 			text-align: center;
 		}
 
-			.image.thumb:after {
+			.image.thumb:after{
 				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'View';
+				background-color: #f691ad;
+				/* content: 'View'; */
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2122,6 +2131,25 @@ input, select, textarea {
 			.image.thumb:hover:before {
 				background: url("images/overlay.png"), url("images/overlay.png");
 				opacity: 0.5;
+			}
+
+			.imagedesc {
+				-moz-transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
+				position: absolute;
+				bottom: 10%;
+				text-align: center;
+				padding: 1em;
+				color: #fff;
+				opacity: 0;
+				background-color: #f691ad;
+				width: 100%;
+			}
+
+			.image.thumb:hover .imagedesc {
+				opacity: 1.0;
 			}
 
 		.image img {

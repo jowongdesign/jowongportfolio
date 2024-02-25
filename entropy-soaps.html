@@ -18,7 +18,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="https://jowongdesign.co.uk/" class="image avatar"><img src="images/myavatar.jpg" alt="" /></a>
+			<a href="https://jowongdesign.co.uk/" class="image avatar"><img src="images/myavatar.jpg" /></a>
 			<h1><strong>Jo Wong</strong><br></h1>
 			<h3>
 				Creative Practitioner. <br />
@@ -27,8 +27,8 @@
 			</h3>
 			<h5> 
 				<a href="index.html">portfolio</a> | 
-				<a href="/about.html">about</a> | 
-				<a href="/contact.html">contact</a>
+				<a href="about.html">about</a> | 
+				<a href="contact.html">contact</a>
 			</h5>
 		</div>
 	</header>
@@ -46,14 +46,14 @@
 			there is a lot of potential in having expressive packaging. </p>
 		<div class="box alt">
 			<div class="row gtr-50 gtr-uniform">
-				<div class="col-12 work-item"><span class="image fit"><img src="images/branding/soap2.jpg"
-							alt="" /></span></div>
-				<div class="col-4 work-item"><span class="image fit"><img src="images/branding/skullsoap.png"
-							alt="" /></span></div>
-				<div class="col-4 work-item"><span class="image fit"><img src="images/branding/sweetsoap.png"
-							alt="" /></span></div>
-				<div class="col-4 work-item"><span class="image fit"><img src="images/branding/cloudsoap.png"
-							alt="" /></span></div>
+				<div class="col-12 work-item"><span class="image fit zoom"><img src="images/branding/soap2.jpg"
+							/></span></div>
+				<div class="col-4 work-item"><span class="image fit zoom"><img src="images/branding/skullsoap.png"
+							/></span></div>
+				<div class="col-4 work-item"><span class="image fit zoom"><img src="images/branding/sweetsoap.png"
+							/></span></div>
+				<div class="col-4 work-item"><span class="image fit zoom"><img src="images/branding/cloudsoap.png"
+							/></span></div>
 
 			</div>
 		</div>
@@ -83,10 +83,17 @@
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/jquery.zoom.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		$('.zoom').zoom();
+	 });
+	 </script>
 
 </body>
 
