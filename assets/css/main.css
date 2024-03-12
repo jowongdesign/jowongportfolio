@@ -2084,7 +2084,6 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block; 
@@ -2124,7 +2123,7 @@ input, select, textarea {
 				white-space: nowrap;
 			}
 
-			.image.thumb:hover:after {
+			.image.thumb:hover:after, .image.thumb:active:after {
 				opacity: 1.0;
 			}
 
@@ -2148,7 +2147,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.image.thumb:hover .imagedesc {
+			.image.thumb:hover .imagedesc, .image.thumb:active .imagedesc {
 				opacity: 1.0;
 			}
 
