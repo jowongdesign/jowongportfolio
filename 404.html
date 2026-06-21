@@ -1,76 +1,39 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+---
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Jo Wong Design Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jo Wong Design | 404 Oops</title>
+
+	<link href="/main.css" rel="stylesheet">
+
 </head>
 
 <body class="is-preload">
+	{% include /header.html %}
+	<main>
 
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<a href="https://jowongdesign.co.uk/" class="image avatar"><img src="images/myavatar.jpg" /></a>
-			<h1><strong>Jo Wong</strong><br></h1>
-			<h3>
-				Creative Practitioner. <br />
-				Freelance Graphic Designer. <br />
-				Nottingham, United Kingdom.
-			</h3>
-			<h5> <a href="https://store.jowongdesign.co.uk">store</a> |  <a href="index.html">portfolio</a> | <a href="/about.html">about</a> | <a href="/contact.html">contact</a></h5>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-8 offset-md-2 mb-4">
+					<h1 class="text-center">404 Error</h1>
+					<img src="/assets/images/shadow.jpg" class="img-fluid mb-4" alt="Shadow 404">
+					<p class="text-center"> Ooopsie doopsie. Something went wrong. The page you were looking for does not exist!<br> If you
+						got to
+						this page by clicking a link, please notify us so we can fix this error :)
+					</p>
+					<div class="d-grid gap-2 col-4 mx-auto">
+						<a href="/index.html" class="btn btn-primary">Return Home</a>
+					</div>
+				</div>
+			</div>
+		</div>0
 		</div>
-	</header>
-
-	<!-- Main -->
-	<div id="main">
-		<section id="one" style="text-align: center;">
-			<p><span class="image fit"><img src="images/shadow.jpg" /></span></p>
-			<header class="major">
-				<h2>404 Error</h2>
-			</header>
-			<p>Ooopsie doopsie. Something went wrong. The page you were looking for does not exist!<br> If you got to
-				this page by clicking a link, please notify us so we can fix this error :)</p>
-			<a href="/index.html" class="button">Return Home</a>
-		</section>
-	</div>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="http://instagram.com/jo.wong.design/" class="icon brands fa-instagram"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="http://linkedin.com/in/jo-wong-7077a088/" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:jo.wong.design@outlook.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>
-					&copy; Jo Wong Design
-					<script>document.write(new Date().getFullYear());</script>
-				</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-	</footer>
-	
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+	</main>
+	{% include /footer.html %}
 </body>
 
 </html>

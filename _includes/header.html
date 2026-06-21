@@ -1,0 +1,28 @@
+<!-- header.html -->
+<nav class="navbar navbar-expand-lg sticky-top bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html"> <img src="/assets/images/JWD Strap Logo.png" alt="Jo Wong Design Avatar" height="30"> </a>
+    <!-- <div class="col-md-3">Creative Practitioner. Freelance Graphic Designer. Nottingham, United Kingdom. </div> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+      aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://store.jowongdesign.co.uk/">store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/' or page.url == '/index.html' or page.url contains '/portfolio' %}active{% endif %}" href="/index.html">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/about.html' %}active{% endif %}" href="/about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/contact.html' %}active{% endif %}" href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+</nav>

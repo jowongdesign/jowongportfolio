@@ -1,175 +1,124 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+---
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Jo Wong Design</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo Wong Design | Portfolio</title>
+
+  <link href="/main.css" rel="stylesheet">
+
 </head>
 
-<body class="is-preload">
+<body>
+  <!-- <img src="/assets/images/shadow.jpg" class="img-fluid" alt="Porfolio Home Header Banner"> -->
+  {% include /header.html %}
 
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<a href="https://jowongdesign.co.uk/" class="image avatar"><img src="images/myavatar.jpg" /></a>
-			<h1><strong>Jo Wong</strong><br></h1>
-			<h3>
-				Creative Practitioner. <br />
-				Freelance Graphic Designer. <br />
-				Nottingham, United Kingdom.
-			</h3>
-			<h5>
-				<a href="https://store.jowongdesign.co.uk">store</a> | 
-				<a href="index.html">portfolio</a> | 
-				<a href="about.html">about</a> | 
-				<a href="contact.html">contact</a>
-			</h5>
-		</div>
-	</header>
+  <main>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/santa-cards.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/santalicense.jpg" class="img-thumbnail" alt="Santa PVC ID Card">
+              <div class="img-hover-overlay fs-4">
+                <span>Santa Cards</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/data-merging.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/diggi.jpg" class="img-thumbnail"
+                alt="Digituff Event Passes">
+              <div class="img-hover-overlay fs-4">
+                <span>Data Merging</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/george-winnie-the-pooh.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/poohshirt.jpg" class="img-thumbnail" alt="George Winnie The Pooh">
+              <div class="img-hover-overlay fs-4">
+                <span>George at ASDA x Winnie the Pooh | Change a Girl's Life</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/wpl-webui.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/wplweb.jpg" class="img-thumbnail" alt="We Print Lanyards Web UI">
+              <div class="img-hover-overlay fs-4">
+                <span>We Print Lanyards Web UI</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/entropy-soaps.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/es.jpg" class="img-thumbnail" alt="Entropy Soaps">
+              <div class="img-hover-overlay fs-4">
+                <span>Entropy Soaps</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/barber-black-sheep.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/bbs.jpg" class="img-thumbnail" alt="Barber Black Sheep">
+              <div class="img-hover-overlay fs-4">
+                <span>Barber Black Sheep</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/illustration.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/nes.jpg" class="img-thumbnail" alt="Illustration">
+              <div class="img-hover-overlay fs-4">
+                <span>Illustration</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/little-bean.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/littlebean.jpg" class="img-thumbnail" alt="Little Bean Homemade">
+              <div class="img-hover-overlay fs-4">
+                <span>Little Bean Homemade</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a class="nav-link" href="/portfolio/typography.html">
+            <div class="img-hover-wrap">
+              <img src="/assets/images/Thumbnails/typo.jpg" class="img-thumbnail" alt="Typography">
+              <div class="img-hover-overlay fs-4">
+                <span>Typography</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-	<!-- Main -->
-	<div id="main">
-		<section id="two">
-			<div class="row gtr-50 gtr-uniform">
+  {% include /footer.html %}
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="wpl-card.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/digituff_thumb.jpg" alt=""/>
-								<p class="imagedesc">Event Cards</p>
-							</div>
-						</div>
-					</a>
-				</article>
-				
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="wpl-lanyard.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/lanyard_thumb.jpg" alt=""/>
-								<p class="imagedesc">Lanyard Designs</p>
-							</div>
-						</div>
-					</a>
-				</article>
-				
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="wpl-ui.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/ui_thumb.jpg" alt=""/>
-								<p class="imagedesc">We Print Lanyards UI</p>
-							</div>
-						</div>
-					</a>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="entropy-soaps.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/soap_thumb.jpg" alt=""/>
-								<p class="imagedesc">Entropy soaps Packaging</p>
-							</div>
-						</div>
-					</a>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="barber-black-sheep.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/bbs_thumb.jpg" alt=""/>
-								<p class="imagedesc">Barber Black Sheep</p>
-							</div>
-						</div>
-					</a>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="simplex-code.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/simplex_thumb.jpg" alt=""/>
-								<p class="imagedesc">Simplex Code Branding</p>
-							</div>
-						</div>
-					</a>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="digital-art.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/illustration_thumb.jpg" alt=""/>
-								<p class="imagedesc">Digital Art</p>
-							</div>
-						</div>
-					</a>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="little-bean.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/littlebean_thumb.jpg" alt=""/>
-								<p class="imagedesc">Little Bean Branding</p>
-							</div>
-						</div>
-					</a>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="abstract-art.html">
-						<div class="col-6">
-							<div class="col-6 image fit thumb">
-								<img src="images/thumbs/typography_thumb.jpg"" alt=""/>
-								<p class="imagedesc">Typography</p>
-							</div>
-						</div>
-					</a>
-				</article>
-				
-			</div>
-		</section>
-	</div>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="http://instagram.com/jo.wong.design/" class="icon brands fa-instagram"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="http://linkedin.com/in/jo-wong-7077a088/" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:jo.wong.design@outlook.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>
-					&copy; Jo Wong Design
-					<script>document.write(new Date().getFullYear());</script>
-				</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-	</footer>
-	
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 
 </body>
 
